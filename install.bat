@@ -7,7 +7,7 @@ set INSTALL_DIR=%LOCALAPPDATA%\BatteryManager
 if not exist "%INSTALL_DIR%" mkdir "%INSTALL_DIR%"
 
 REM Copy published files
-xcopy /Y /E /I "BatteryManagerService\bin\Release\net8.0-windows10.0.17763.0\win-x64\publish\*" "%INSTALL_DIR%\"
+xcopy /Y /E /I "BatteryManagerService\bin\Release\net10.0-windows10.0.17763.0\win-x64\publish\*" "%INSTALL_DIR%\"
 
 REM Create startup shortcut
 set STARTUP_FOLDER=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
